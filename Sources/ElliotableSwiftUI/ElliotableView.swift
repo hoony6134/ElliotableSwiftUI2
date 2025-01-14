@@ -271,7 +271,7 @@ struct CourseColumnView: View {
                     .frame(minWidth: 0,
                            maxWidth: .infinity,
                            minHeight: hourHeight,
-                           maxHeight: (hourHeight * courseHourDiff) + endMinuteDiff)
+                           maxHeight: (hourHeight * courseHourDiff) + endMinuteDiff/60*hourHeight)
                     .background(RoundedCorners(color: Color(course.backgroundColor), tl: 0, tr: 0, bl: 0, br: 0))
                     .gesture(
                         TapGesture()
