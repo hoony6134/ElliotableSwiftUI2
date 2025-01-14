@@ -264,8 +264,8 @@ struct CourseColumnView: View {
                 }
                 .frame(minWidth: 0,
                        maxWidth: .infinity,
-                       minHeight: 27,
-                       maxHeight: 27 + (hourHeight * startHourDiff) + startMinuteDiff)
+                       minHeight: 5,
+                       maxHeight: 5 + (hourHeight * startHourDiff) + startMinuteDiff)
                 
                 CourseView(course: course)
                     .frame(minWidth: 0,
