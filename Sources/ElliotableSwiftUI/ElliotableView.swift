@@ -265,13 +265,13 @@ struct CourseColumnView: View {
                 .frame(minWidth: 0,
                        maxWidth: .infinity,
                        minHeight: 20,
-                       maxHeight: 20 + (hourHeight * startHourDiff) + startMinuteDiff/60*hourHeight)
+                       maxHeight: 20 + (hourHeight * startHourDiff) + startMinuteDiff)
                 
                 CourseView(course: course)
                     .frame(minWidth: 0,
                            maxWidth: .infinity,
-                           minHeight: hourHeight,
-                           maxHeight: (hourHeight * courseHourDiff) + endMinuteDiff/60*hourHeight)
+                           minHeight: 0,
+                           maxHeight: (hourHeight * courseHourDiff) + endMinuteDiff)
                     .background(RoundedCorners(color: Color(course.backgroundColor), tl: 0, tr: 0, bl: 0, br: 0))
                     .gesture(
                         TapGesture()
