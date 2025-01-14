@@ -281,8 +281,9 @@ struct CourseColumnView: View {
                             }
                     )
             }
+            Spacer()
         }
-        Spacer()
+        
     }
 }
 
