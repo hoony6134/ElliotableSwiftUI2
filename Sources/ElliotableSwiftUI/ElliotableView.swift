@@ -254,8 +254,8 @@ struct CourseColumnView: View {
                 let startHourDiff = CGFloat(courseStartHour - ElliotableConstant.shared.getMinTime())
                 let startMinuteDiff = (CGFloat(courseStartMinute) / CGFloat(60)) * hourHeight
                 
-                let courseHourDiff = floor(CGFloat(courseEndHour - courseStartHour))
-                let endMinuteDiff = (CGFloat(courseEndMinute) / CGFloat(60)) * hourHeight
+                let courseHourDiff = (CGFloat(courseEndHour - courseStartHour))
+                let endMinuteDiff = (CGFloat(courseEndMinute - courseStartMinute) / CGFloat(60)) * hourHeight
                 
                 VStack {
                     
